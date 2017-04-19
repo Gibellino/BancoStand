@@ -1,9 +1,12 @@
 package model;
 
+import java.util.ArrayList;
+
 public class Conta {
 
 	private String nome, pass;
 	private float saldo;
+	private ArrayList<Carro> carros;
 	
 	public Conta(String nome, String pass) {
 		this.nome = nome;
@@ -35,6 +38,15 @@ public class Conta {
 		this.saldo = saldo;
 	}
 	
+	
+	public ArrayList<Carro> getCarros() {
+		return carros;
+	}
+
+	public void setCarros(ArrayList<Carro> carros) {
+		this.carros = carros;
+	}
+
 	public String toString(){
 		return " Nome: " + getNome() + "\n"
 			+ " Pass: " + getPass() + "\n"

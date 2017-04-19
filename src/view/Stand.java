@@ -28,6 +28,16 @@ public class Stand {
 			
 			do{
 				
+				System.out.println("\n\tMenu:");
+				System.out.println(" 1- Comprar Carro;\n"
+									+ " 2- Vender Carro;\n"
+									+ " 0- Sair\n");
+				
+				System.out.print("Insira o aopção que deseja: ");
+				op = read.nextInt();
+			
+				System.out.println();
+				
 			}while(op != 0);
 			
 			
