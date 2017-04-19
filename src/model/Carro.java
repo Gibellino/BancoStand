@@ -3,12 +3,13 @@ package model;
 public class Carro {
 
 	private String marca, modelo;
-	private float preco;
+	private float precoC, precoV;
 	
-	public Carro(String marca, String modelo, float preco) {
+	public Carro(String marca, String modelo, float precoC, float precoV) {
 		this.marca = marca;
 		this.modelo = modelo;
-		this.preco = preco;
+		this.precoC = precoC;
+		this.precoV = precoV;
 	}
 
 	public String getMarca() {
@@ -27,12 +28,26 @@ public class Carro {
 		this.modelo = modelo;
 	}
 
-	public float getPreco() {
-		return preco;
+	public float getPrecoC() {
+		return precoC;
 	}
 
-	public void setPreco(float preco) {
-		this.preco = preco;
+	public void setPrecoC(float preco) {
+		this.precoC = preco;
+	}
+
+	public float getPrecoV() {
+		return precoV;
+	}
+
+	public void setPrecoV(float precoV) {
+		this.precoV = precoV;
 	}
 	
+	public String toString(){
+		return "Marca: " + getMarca() + "\n"
+				+ "Modelo: " + getModelo() + "\n"
+				+ "Preço Compra: " + getPrecoC() + "\n"
+				+ "Preço Venda: " + getPrecoV() + "\n";
+	}
 }

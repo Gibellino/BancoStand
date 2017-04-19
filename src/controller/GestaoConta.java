@@ -2,6 +2,7 @@ package controller;
 
 import java.util.ArrayList;
 
+import model.Carro;
 import model.Conta;
 
 public class GestaoConta {
@@ -31,6 +32,12 @@ public class GestaoConta {
 	public void depositar(Conta c, float m){
 		c.setSaldo(c.getSaldo()+m);
 	}
+	
+	public void comprarCarro(Conta stand, Carro cr){
+	
+				stand.getCarros().add(cr);
+	}
+	
 	
 	public void print(ArrayList<Conta> conta, Conta ct ,boolean b){
 		

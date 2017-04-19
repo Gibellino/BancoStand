@@ -1,0 +1,7 @@
+Os carros só são inseridos no programa se a Conta stand tiver dinheiro respectivo ao preço de compra, apesar de inserirmos todos os dados.
+
+Os carros estão associados a uma conta.
+
+O programa só entra no menu Stand se houver Conta Stand ou stand.
+
+Só pode haver uma Conta Stand

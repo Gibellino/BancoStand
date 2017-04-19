@@ -1,8 +1,9 @@
-package view;
+package console;
 
 import java.util.ArrayList;
 import java.util.Scanner;
 
+import model.Carro;
 import model.Conta;
 
 public class Main {
